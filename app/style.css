@@ -312,3 +312,12 @@ button {
     gap: 10px;
     justify-content: center;
 }
+
+.main.dark {
+    background: linear-gradient(110.05deg, #383838 0%, rgba(22, 22, 22, 0.5) 71.82%);
+    color: #fff;
+}
+
+.main.dark .block {
+    background: #292929;
+}

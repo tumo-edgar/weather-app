@@ -7,7 +7,11 @@ function createMainWindow(){
     const mainWindow = new BrowserWindow({
         title: "Weather app",
         width: 1260,
-        height: 980
+        height: 980,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        }
     });
 
     mainWindow.loadFile(path.join(__dirname, './app/index.html'));
